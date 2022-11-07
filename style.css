@@ -4,8 +4,58 @@
     box-sizing: border-box;
 }
 
-/* General */
+/* GENERAL */
 
 body{
     font-family: sans-serif;
+    background-color: black;
+    color: white;
+
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* NAV*/
+.nav-container{
+    height: 80px;
+    background-color: black;
+}
+.nav-actions{
+    text-align: end;
+}
+.nav-actions ul li{
+    display: inline-block;
+    color: white;
+    background-color: rgba(83, 83, 83, 0.814);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 3px;
+}
+/* MAIN */
+.main-container {
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+}
+.main-row{
+    margin: 0px 80px;
+}
+.main-col{
+    display: inline-block;
+    margin-bottom: 7px;
+    
+}
+.main-card{
+    position: relative;
+}
+/* BADGE */
+.microphone{
+    background-color: rgba(0, 0, 0, 0.439);
+    display: inline;
+    padding: 5px; 
+    position: absolute;
+    bottom: 0;
 }
