@@ -7,11 +7,16 @@
 /* GENERAL */
 
 body{
+
     font-family: sans-serif;
     background-color: black;
     color: white;
 
 }
+
+
+
+
 ul li{
     list-style: none;
 }
@@ -36,26 +41,39 @@ a{
     margin: 10px 3px;
 }
 /* MAIN */
-.main-container {
-    height: calc(100vh - 180px);
+main{
+
+    height: calc( 100vh - 160px);
     overflow-y: auto;
 }
-.main-row{
-    margin: 0px 80px;
+#gallery {
+
+    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
 }
-.main-col{
-    display: inline-block;
-    margin-bottom: 7px;
-    
-}
-.main-card{
+#gallery .participant{
+    flex: 0 0 230px;
+    padding: 3px;
     position: relative;
+
 }
+.participant img{
+    max-width: 100%;
+    display: block;
+}
+
+
 /* BADGE */
-.microphone{
+.name{
     background-color: rgba(0, 0, 0, 0.439);
     display: inline;
     padding: 5px; 
     position: absolute;
     bottom: 0;
+    left: 0;
+    cursor: pointer;
 }
